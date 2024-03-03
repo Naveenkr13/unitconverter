@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00B8D4"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="@integer/material_motion_duration_long_2"
+    tools:context=".kmchange">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scroll">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#FF6D00"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="180dp"
+        android:id="@+id/edtValue"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:inputType="numberDecimal"
+        android:layout_margin="20dp"
+        />
+
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/spin"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    />
+</LinearLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll"
+android:layout_alignParentBottom="true"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:weightSum="1"
+    android:background="#00B8D4"
+    android:id="@+id/values"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:id="@+id/kilometer"
+            android:text="00"
+            android:textSize="19dp"/>
+
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffff"
+         android:background="#ffff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="Kilometer"
+            android:textSize="19dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="00"
+            android:id="@+id/meter"
+            android:textSize="19dp"/>
+
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:background="#ffff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="Meter"
+            android:textSize="19dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/centimeter"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="00"
+            android:textSize="19dp"/>
+
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:background="#ffff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="Centimeter"
+            android:textSize="19dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="00"
+            android:id="@+id/milimeter"
+            android:textSize="19dp"/>
+
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:background="#ffff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="Milimeter"
+            android:textSize="19dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="00"
+            android:id="@+id/micrometer"
+            android:textSize="19dp"/>
+
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:background="#ffff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="MicroMeter"
+            android:textSize="19dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="00"
+            android:id="@+id/nanometer"
+            android:textSize="19dp"/>
+
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:background="#ffff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="Nanometer"
+            android:textSize="19dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="00"
+            android:id="@+id/miles"
+            android:textSize="19dp"/>
+
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:background="#ffff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="Mile"
+            android:textSize="19dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:id="@+id/yards"
+            android:text="00"
+            android:textSize="19dp"/>
+
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:background="#ffff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="Yard"
+            android:textSize="19dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="00"
+            android:id="@+id/foots"
+            android:textColor="#ffff"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:background="#ffff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="Foot"
+            android:textSize="19dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="00"
+            android:id="@+id/inch"
+            android:textSize="19dp"/>
+
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:background="#ffff"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="Inch"
+            android:textSize="19dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#ffff"
+        android:layout_height="2dp"/>
+
+
+
+</LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
